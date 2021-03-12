@@ -14,5 +14,3 @@ container.addEventListener('mousemove', (e) => {
 		eye.style.transform = `rotate(${rotationDegrees}deg)`;
 	});
 });
-
-console.log('Hola Mundo!');

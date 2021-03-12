@@ -1,7 +1,7 @@
 /** @format */
 
 body {
-	height: 100vh;
+	height: 95vh;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -10,7 +10,11 @@ body {
 .face-container {
 	width: 250px;
 	height: 250px;
-	background-color: #f5cc02;
+	background: radial-gradient(
+		circle,
+		rgba(245, 206, 15, 1) 52%,
+		rgba(210, 177, 14, 1) 83%
+	);
 	border-radius: 100%;
 	position: relative;
 }
@@ -27,7 +31,7 @@ body {
 	display: inline-block;
 	width: 35px;
 	height: 35px;
-	background-color: black;
+	background-color: #000;
 	border-radius: 50%;
 	margin-left: 4px;
 	margin-top: 4px;
@@ -38,7 +42,7 @@ body {
 	left: 10px;
 	width: 20px;
 	height: 20px;
-	background: white;
+	background: #fff;
 	border-radius: 50%;
 	content: ' ';
 }
@@ -53,6 +57,28 @@ body {
 	position: absolute;
 	right: 50px;
 	top: 65px;
+}
+
+.mouth {
+	width: 100px;
+	background-color: white;
+	height: 30px;
+	position: absolute;
+	left: 77px;
+	bottom: 50px;
+	border-top-right-radius: 100%;
+	border-top-left-radius: 100%;
+}
+.mouth::after {
+	position: absolute;
+	width: 100px;
+	background-color: rgba(245, 206, 15, 1);
+	height: 30px;
+	position: absolute;
+	bottom: -11px;
+	border-top-right-radius: 100%;
+	border-top-left-radius: 100%;
+	content: ' ';
 }
 
 /* Animations */
