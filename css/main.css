@@ -18,6 +18,9 @@ body {
 	border-radius: 100%;
 	position: relative;
 }
+.face-container:hover {
+	cursor: pointer;
+}
 
 .eye {
 	width: 45px;
@@ -59,26 +62,59 @@ body {
 	top: 65px;
 }
 
-.mouth {
-	width: 100px;
-	background-color: white;
-	height: 30px;
-	position: absolute;
-	left: 77px;
-	bottom: 50px;
-	border-top-right-radius: 100%;
-	border-top-left-radius: 100%;
+.eyebrow {
+	height: 25px;
+	width: 52px;
+	border-radius: 50%;
+	border: 5px solid transparent;
+	box-sizing: border-box;
+	border-top-color: black;
 }
-.mouth::after {
+.left-eyebrow {
 	position: absolute;
-	width: 100px;
-	background-color: rgba(245, 206, 15, 1);
-	height: 30px;
+	top: 50px;
+	left: 48px;
+}
+.right-eyebrow {
 	position: absolute;
-	bottom: -11px;
-	border-top-right-radius: 100%;
-	border-top-left-radius: 100%;
-	content: ' ';
+	right: 48px;
+	top: 50px;
+}
+
+.mouth {
+	position: absolute;
+	top: 156px;
+	left: 77px;
+	width: 102px;
+	height: 80px;
+	border: 6px solid transparent;
+	box-sizing: border-box;
+	border-radius: 50%;
+	border-top-color: black;
+}
+
+.mouth-happy {
+	position: absolute;
+	width: 102px;
+	height: 80px;
+	border: 6px solid transparent;
+	top: 116px;
+	left: 77px;
+	box-sizing: border-box;
+	border-radius: 50%;
+	border-bottom-color: black;
+}
+
+.mouth-test {
+	position: absolute;
+	width: 102px;
+	height: 37px;
+	background-color: black;
+	top: 149px;
+	left: 77px;
+	box-sizing: border-box;
+	border-bottom-left-radius: 50px;
+	border-bottom-right-radius: 50px;
 }
 
 /* Animations */
@@ -117,7 +153,7 @@ body {
 	}
 	50% {
 		box-shadow: 0 25px 15px 0px rgba(0, 0, 0, 0.2);
-		transform: translatey(-20px);
+		transform: translatey(-30px);
 	}
 	100% {
 		box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
