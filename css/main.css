@@ -86,7 +86,7 @@ body {
 	top: 156px;
 	left: 77px;
 	width: 102px;
-	height: 80px;
+	height: 40px;
 	border: 6px solid transparent;
 	box-sizing: border-box;
 	border-radius: 50%;
@@ -96,18 +96,6 @@ body {
 .mouth-happy {
 	position: absolute;
 	width: 102px;
-	height: 80px;
-	border: 6px solid transparent;
-	top: 116px;
-	left: 77px;
-	box-sizing: border-box;
-	border-radius: 50%;
-	border-bottom-color: black;
-}
-
-.mouth-test {
-	position: absolute;
-	width: 102px;
 	height: 37px;
 	background-color: black;
 	top: 149px;
@@ -115,6 +103,19 @@ body {
 	box-sizing: border-box;
 	border-bottom-left-radius: 50px;
 	border-bottom-right-radius: 50px;
+}
+
+.tongue {
+	width: 62px;
+	height: 20px;
+	background: red;
+	position: absolute;
+	top: 166px;
+	left: 97px;
+	border-top-left-radius: 50px;
+	border-top-right-radius: 50px;
+	border-bottom-left-radius: 100%;
+	border-bottom-right-radius: 100%;
 }
 
 /* Animations */
@@ -158,5 +159,65 @@ body {
 	100% {
 		box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
 		transform: translatey(0px);
+	}
+}
+
+.smile {
+	animation: smile 0.5s ease-out forwards;
+}
+
+@keyframes smile {
+	0% {
+		position: absolute;
+		top: 156px;
+		left: 77px;
+		width: 102px;
+		height: 80px;
+		box-sizing: border-box;
+		border-radius: 50%;
+		border-top-color: black;
+	}
+
+	100% {
+		position: absolute;
+		width: 102px;
+		height: 37px;
+		background-color: black;
+		top: 149px;
+		left: 77px;
+		box-sizing: border-box;
+		border-bottom-left-radius: 50px;
+		border-bottom-right-radius: 50px;
+	}
+}
+
+.tongue {
+	animation: tongue 0.5s ease-out forwards;
+}
+
+@keyframes tongue {
+	0% {
+		position: absolute;
+		top: 156px;
+		left: 77px;
+		width: 102px;
+		height: 80px;
+		border: 6px solid transparent;
+		box-sizing: border-box;
+		border-radius: 50%;
+		border-top-color: black;
+	}
+
+	100% {
+		width: 62px;
+		height: 20px;
+		background: red;
+		position: absolute;
+		top: 166px;
+		left: 97px;
+		border-top-left-radius: 50px;
+		border-top-right-radius: 50px;
+		border-bottom-left-radius: 100%;
+		border-bottom-right-radius: 100%;
 	}
 }

@@ -21,11 +21,16 @@ followingEyes();
 function beHappy() {
 	const faceContainer = document.querySelector('.face-container');
 	const mouth = document.querySelector('.mouth');
+	const tongue = document.querySelector('#tongue');
 	faceContainer.addEventListener('mouseover', (e) => {
-		mouth.classList.add('mouth-test');
+		mouth.classList.add('smile');
+		tongue.classList.add('tongue');
+		mouth.classList.remove('mouth');
 	});
 	faceContainer.addEventListener('mouseout', (e) => {
-		mouth.classList.remove('mouth-test');
+		mouth.classList.remove('smile');
+		tongue.classList.remove('tongue');
+		mouth.classList.add('mouth');
 	});
 }
 beHappy();
